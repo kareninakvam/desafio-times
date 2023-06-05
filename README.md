@@ -15,4 +15,6 @@ Resolução do Desafio Enviado
 4. Edite o arquivo .env com as informações necessárias.
 
 
+Documentação dos testes feitos:
 
+https://documenter.getpostman.com/view/27256559/2s93sXbEQw
