@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/var/www/html
+    networks:
+      - laravel
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: clientes_db
+      MYSQL_ROOT_PASSWORD: 2020
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - laravel
+
+networks:
+  laravel:

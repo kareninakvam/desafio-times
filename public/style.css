@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(to bottom, #211F1F, #4A4646);
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    color:white;
+  }
